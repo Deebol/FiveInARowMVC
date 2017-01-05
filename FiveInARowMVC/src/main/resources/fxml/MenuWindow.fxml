@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.debski.controllers.MenuWindowController">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu text="File">
+                  <items>
+                  	<MenuItem fx:id="newMenuItem" onAction="#newMenuItemClicked" text="New" />	
+                    <MenuItem fx:id="quitMenuItem" onAction="#quitMenuItemClicked" text="Quit" />
+                  </items>
+                </Menu>
+                <Menu text="Help">
+                  <items>
+                        <MenuItem fx:id="aboutMenuItem" onAction="#aboutMenuItemClicked" text="About" />
+                  <MenuItem fx:id="rulesMenuItem" onAction="#rulesMenuItemClicked" text="Rules of the game" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <AnchorPane id="AnchorPane" fx:id="anchorPaneCenter" styleClass="mainWindow" stylesheets="@../styles/MainWindow.css" BorderPane.alignment="CENTER" />
+         </center>
+</BorderPane>
