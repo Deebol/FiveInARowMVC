@@ -1,0 +1,39 @@
+/* Application wide styles */
+
+#AnchorPane {
+	-fx-background-image: url("../images/gomoku.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 100% 100%;
+}
+
+.grid-buttons {
+    -fx-background-color: 
+        gray,
+        linear-gradient(#d6d6d6 50%, white 100%);
+    -fx-background-insets: 1;
+}
+
+
+.grid-buttons:hover {
+	-fx-background-color: 
+        #b3d9ff;
+    -fx-background-insets: 1;
+}
+
+.x-buttons {
+	-fx-background-color: white;
+	-fx-background-position: center center;
+	-fx-background-image: url('/images/firstPlayerSign.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 90% 90% 90% 90%;
+}
+
+.o-buttons {
+	-fx-background-color: white;
+	-fx-background-position: center center;
+	-fx-alignment: center;
+	-fx-background-image: url('/images/secondPlayerSign.png');
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 90% 90%;
+}
+

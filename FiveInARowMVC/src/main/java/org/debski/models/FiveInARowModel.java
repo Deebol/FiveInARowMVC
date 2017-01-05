@@ -25,7 +25,7 @@ public class FiveInARowModel {
 		y -= 1;
 		checkAxis(x);
 		checkAxis(y);
-		selectPlayer();
+		//selectPlayer();
 		mark(x,y);
 		return checkIfWin(x, y);
 	}
@@ -35,13 +35,13 @@ public class FiveInARowModel {
 	}
 	
 	private void mark(int x, int y) {
-		if(board[x][y] != 0) throw new RuntimeException("Probujesz zaznaczyc pole, ktore jest juz zaznaczone");
-		board[x][y] = currentPlayer;
+		if(board[x][y] != '\u0000') throw new RuntimeException("Probujesz zaznaczyc pole, ktore jest juz zaznaczone");
+		board[x][y] = selectPlayer();
 	}
 	
-	private void selectPlayer() {
-		if (currentPlayer == 'X') currentPlayer = 'O';
-		else currentPlayer = 'X';
+	private char selectPlayer() {
+		if (currentPlayer == 'X') return currentPlayer = 'O';
+		else return currentPlayer = 'X';
 	}
 	
 	private String checkIfWin(int row, int column) {

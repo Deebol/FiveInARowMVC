@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.debski.controllers.MenuWindowController">
+<BorderPane minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="500.0" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.debski.controllers.MenuWindowController">
          <top>
             <MenuBar BorderPane.alignment="CENTER">
               <menus>
@@ -26,6 +26,6 @@
             </MenuBar>
          </top>
          <center>
-            <AnchorPane id="AnchorPane" fx:id="anchorPaneCenter" styleClass="mainWindow" stylesheets="@../styles/MainWindow.css" BorderPane.alignment="CENTER" />
+            <AnchorPane id="AnchorPane" fx:id="anchorPaneCenter" BorderPane.alignment="CENTER" />
          </center>
 </BorderPane>
